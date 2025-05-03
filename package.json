@@ -4,6 +4,10 @@
   "description": "IntelliSense and Syntax Highlighting for the Scripting Language used by the Fire Department 2 and 3 engine",
   "version": "0.1.0",
   "publisher": "MenelBOT",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/MenelBOT/FDScript.git"
+  },
   "engines": {
     "vscode": "^1.99.0"
   },
