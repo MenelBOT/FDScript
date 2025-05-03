@@ -1,0 +1,70 @@
+{
+  "name": "fdscript",
+  "displayName": "FDScript",
+  "description": "IntelliSense and Syntax Highlighting for the Scripting Language used by the Fire Department 2 and 3 engine",
+  "version": "0.1.0",
+  "publisher": "MenelBOT",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Programming Languages",
+	"Language Packs"
+  ],
+  "activationEvents": [
+	"onLanguage:fdscript"
+  ],
+  "keywords": [
+	"fire department",
+	"fire department 2",
+	"fire department 3",
+	"fdscript",
+	"spherescript",
+	"scripting",
+	"intellisense",
+	"syntax highlighting"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+	"commands": [
+		{
+		"command": "fdscript.helloWorld",
+		"title": "Hello World"
+		}
+	],
+	"languages": [
+		{
+		"id": "fdscript",
+		"aliases": ["FDScript"],
+		"extensions": [".scp"],
+		"configuration": "./language-configuration.json"
+		}
+	],
+	"grammars": [
+		{
+		"language": "fdscript",
+		"scopeName": "source.fdscript",
+		"path": "./syntaxes/fdscript.tmLanguage.json"
+		}
+	]
+	},
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

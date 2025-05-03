@@ -1,0 +1,65 @@
+{
+	"scopeName": "source.fdscript",
+	"patterns":
+	[
+		{
+			"name": "keyword.control.fdscript",
+			"match": "\\b(if|else|return|while|for|break|continue)\\b"
+		},
+		{
+			"name": "storage.type.fdscript",
+			"match": "\\b(f32|s32|mcString|mcBool|EntityID|void)\\b"
+		},
+		{
+			"name": "comment.line.double-slash.fdscript",
+			"begin": "//",
+			"beginCaptures": {
+			"0": {
+				"name": "punctuation.definition.comment.fdscript"
+			}
+			},
+			"end": "$"
+		},
+		{
+			"name": "constant.numeric.float.fdscript",
+			"match": "\\b\\d+\\.\\d+\\b"
+		},
+		{
+			"name": "constant.numeric.integer.fdscript",
+			"match": "\\b\\d+\\b"
+		},
+		{
+			"name": "string.quoted.double.fdscript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+			{
+				"match": "\\\\.",
+				"name": "constant.character.escape.fdscript"
+			}
+			]
+		},
+		{
+			"name": "punctuation.terminator.fdscript",
+			"match": ";"
+		},
+		{
+			"name": "keyword.operator.assignment.fdscript",
+			"match": "="
+		},
+		{
+			"name": "entity.name.function.fdscript",
+			"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\s*(?=\\()"
+		},
+		{
+			"name": "variable.other.fdscript",
+			"match": "\\b[a-z_][a-zA-Z0-9_]*\\b"
+		}
+	],
+	"repository": {},
+	"names": [],
+	"fileTypes": ["scp"],
+	"firstLineMatch": "",
+	"uuid": ""
+  }
+  

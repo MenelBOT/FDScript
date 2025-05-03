@@ -1,0 +1,332 @@
+[
+  {
+    "label": "FIR_HPEnable",
+    "kind": "Function",
+    "insertText": "FIR_HPEnable(${1:EntityID}, ${2:s32})",
+    "documentation": "Enable or disable hotpoints\n\nReturn: None"
+  },
+  {
+    "label": "FIR_HPGetGrowthRate",
+    "kind": "Function",
+    "insertText": "FIR_HPGetGrowthRate(${1:EntityID})",
+    "documentation": "Permit to read growth rate of a hotpoints group or a single hotpoint\n\nReturn: None"
+  },
+  {
+    "label": "FIR_HPGetIntensity",
+    "kind": "Function",
+    "insertText": "FIR_HPGetIntensity(${1:EntityID})",
+    "documentation": "Return the current intensity of the provided hotpoint, or the sum of current intensity of provided group\n\nReturn: None"
+  },
+  {
+    "label": "FIR_HPIsEnable",
+    "kind": "Function",
+    "insertText": "FIR_HPIsEnable(${1:EntityID})",
+    "documentation": "Returns the activity state of a hotpoint, or a group of hotpoints. Return the number of hotpoint actually activated. (if a hotpoint is specified, returns 0 or 1)\n\nReturn: None"
+  },
+  {
+    "label": "FIR_HPMultGrowthRate",
+    "kind": "Function",
+    "insertText": "FIR_HPMultGrowthRate(${1:EntityID}, ${2:f32})",
+    "documentation": "Multiply the growth rate of every hotpoint of the provided group by the provided multiplier\n\nReturn: None"
+  },
+  {
+    "label": "FIR_HPSetIntensity",
+    "kind": "Function",
+    "insertText": "FIR_HPSetIntensity(${1:EntityID}, ${2:f32})",
+    "documentation": "Set the current intensity of the provided hotpoint or of all hotpoints in the provided group\n\nReturn: None"
+  },
+  {
+    "label": "FIR_WGetDirection",
+    "kind": "Function",
+    "insertText": "FIR_WGetDirection(${1:&X}, ${2:&Y}, ${3:&Z})",
+    "documentation": "Permit to read the wind direction\n\nReturn: None"
+  },
+  {
+    "label": "FIR_WGetSize",
+    "kind": "Function",
+    "insertText": "FIR_WGetSize()",
+    "documentation": "Retrieves the wind size (<=> Power)\n\nReturn: None"
+  },
+  {
+    "label": "FIR_WSetDirection",
+    "kind": "Function",
+    "insertText": "FIR_WSetDirection(${1:X}, ${2:Y}, ${3:Z})",
+    "documentation": "Permit to set the wind direction\n\nReturn: None"
+  },
+  {
+    "label": "FIR_WSetSize",
+    "kind": "Function",
+    "insertText": "FIR_WSetSize(${1:f32})",
+    "documentation": "Set the wind size (<=> Power)\n\nReturn: None"
+  },
+  {
+    "label": "SCR_GetVarF32",
+    "kind": "Function",
+    "insertText": "SCR_GetVarF32(${1:mcString})",
+    "documentation": "Retrieve the value of the provided variable\n\nReturn: None"
+  },
+  {
+    "label": "SCR_GetVarS32",
+    "kind": "Function",
+    "insertText": "SCR_GetVarS32(${1:mcString})",
+    "documentation": "Retrieve the value of the provided variable\n\nReturn: None"
+  },
+  {
+    "label": "SCR_GetVarString",
+    "kind": "Function",
+    "insertText": "SCR_GetVarString(${1:mcString})",
+    "documentation": "Retrieve the value of the provided variable\n\nReturn: None"
+  },
+  {
+    "label": "SCR_IsRunning",
+    "kind": "Function",
+    "insertText": "SCR_IsRunning(${1:mcString})",
+    "documentation": "Run the specified script function in delay mode. The function immediatly return and put the script function in a queue in order to run it at delay expiration\n\nReturn: None"
+  },
+  {
+    "label": "SCR_SetVarF32",
+    "kind": "Function",
+    "insertText": "SCR_SetVarF32(${1:mcString}, ${2:f32})",
+    "documentation": "Set the value of a f32 global variable. If the variable does not exists, it is created\n\nReturn: None"
+  },
+  {
+    "label": "SCR_SetVarS32",
+    "kind": "Function",
+    "insertText": "SCR_SetVarS32(${1:mcString}, ${2:f32})",
+    "documentation": "Set the value of a s32 global variable. If the variable does not exists, it is created\n\nReturn: None"
+  },
+  {
+    "label": "SCR_SetVarString",
+    "kind": "Function",
+    "insertText": "SCR_SetVarString(${1:mcString}, ${2:f32})",
+    "documentation": "Set the value of a string global variable. If the variable does not exists, it is created\n\nReturn: None"
+  },
+  {
+    "label": "SCR_VarExists",
+    "kind": "Function",
+    "insertText": "SCR_VarExists(${1:mcString})",
+    "documentation": "Check the existence of a variable\n\nReturn: None"
+  },
+  {
+    "label": "UTL_GetDeltaGameTime",
+    "kind": "Function",
+    "insertText": "UTL_GetDeltaGameTime()",
+    "documentation": "Get last delta Time (game time)\n\nReturn: None"
+  },
+  {
+    "label": "UTL_GetGameTime",
+    "kind": "Function",
+    "insertText": "UTL_GetGameTime()",
+    "documentation": "Return current game time\n\nReturn: None"
+  },
+  {
+    "label": "UTL_GetRandom",
+    "kind": "Function",
+    "insertText": "UTL_GetRandom()",
+    "documentation": "Get a random number\n\nReturn: None"
+  },
+  {
+    "label": "ENT_AddDamage",
+    "kind": "Function",
+    "insertText": "ENT_AddDamage(${1:EntityID}, ${2:f32})",
+    "documentation": "Add some damage to the specified entity\n\nReturn: None"
+  },
+  {
+    "label": "ENT_AddReserve",
+    "kind": "Function",
+    "insertText": "ENT_AddReserve(${1:EntityID}, ${2:f32})",
+    "documentation": "Add some reserve to the specified entity\n\nReturn: None"
+  },
+  {
+    "label": "ENT_AddStamina",
+    "kind": "Function",
+    "insertText": "ENT_AddStamina(${1:EntityID}, ${2:f32})",
+    "documentation": "Add some stamina to the specified entity\n\nReturn: None"
+  },
+  {
+    "label": "ENT_Create",
+    "kind": "Function",
+    "insertText": "ENT_Create(${1:mcString}, ${2:X}, ${3:Y}, ${4:Z})",
+    "documentation": "Create an entity upon provided class, and insert it in the world at the provided position\n\nReturn: None"
+  },
+  {
+    "label": "ENT_Destroy",
+    "kind": "Function",
+    "insertText": "ENT_Destroy(${1:EntityID})",
+    "documentation": "Removes an entity from the world\n\nReturn: None"
+  },
+  {
+    "label": "ENT_FindByClassName",
+    "kind": "Function",
+    "insertText": "ENT_FindByClassName(${1:mcString})",
+    "documentation": "Return the ID of the first entity matching the provided class name\n\nReturn: None"
+  },
+  {
+    "label": "ENT_FindByName",
+    "kind": "Function",
+    "insertText": "ENT_FindByName(${1:mcString})",
+    "documentation": "Return the ID of the entity matching the provided name\n\nReturn: None"
+  },
+  {
+    "label": "ENT_ForceState",
+    "kind": "Function",
+    "insertText": "ENT_ForceState(${1:EntityID}, ${2:mcString&})",
+    "documentation": "Force the logical state of an entity\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetClass",
+    "kind": "Function",
+    "insertText": "ENT_GetClass(${1:EntityID}, ${2:mcString&})",
+    "documentation": "Removes an entity from the world\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetGridPosition",
+    "kind": "Function",
+    "insertText": "ENT_GetGridPosition(${1:mEntityID}, ${2:s32&}, ${3:s32&})",
+    "documentation": "Retrieve the (X,Y) position of the given entity in grid coordinates. The function raise an assert in case of failure, and returns (0,0)\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetName",
+    "kind": "Function",
+    "insertText": "ENT_GetName(${1:EntityID}, ${2:mcString&})",
+    "documentation": "Retrieve the name of a specific entity\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetOrientation",
+    "kind": "Function",
+    "insertText": "ENT_GetOrientation(${1:EntityID})",
+    "documentation": "Get the orientation (Z rotation) of the given entity (in [0;2PI[). The function raise an assert in case of failure\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetPosition",
+    "kind": "Function",
+    "insertText": "ENT_GetPosition(${1:EntityID}, ${2:f32&}, ${3:f32&})",
+    "documentation": "Retrieve the (X,Y) position of the given entity in world coordinates. The function raise an assert in case of failure, and returns (0,0)\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetPropertyValueF32",
+    "kind": "Function",
+    "insertText": "ENT_GetPropertyValueF32(${1:EntityID}, ${2:mcString}, ${3:mcString}, ${4:mcString})",
+    "documentation": "Retrieve the value of a specific property in an entity propertyset\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetPropertyValueS32",
+    "kind": "Function",
+    "insertText": "ENT_GetPropertyValueS32(${1:EntityID}, ${2:mcString}, ${3:mcString}, ${4:s32})",
+    "documentation": "Retrieve the value of a specific property in an entity propertyset\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetPropertyValueString",
+    "kind": "Function",
+    "insertText": "ENT_GetPropertyValueString(${1:EntityID}, ${2:mcString}, ${3:mcString}, ${4:f32})",
+    "documentation": "Retrieve the value of a specific property in an entity propertyset\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetState",
+    "kind": "Function",
+    "insertText": "ENT_GetState(${1:EntityID}, ${2:mcString&})",
+    "documentation": "Removes an entity from the world\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GetZ",
+    "kind": "Function",
+    "insertText": "ENT_GetZ(${1:EntityID})",
+    "documentation": "Get the elevation (Z position) of the given entity. The function raise an assert in case of failure\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GroupGetEntityAt",
+    "kind": "Function",
+    "insertText": "ENT_GroupGetEntityAt(${1:EntityID}, ${2:s32})",
+    "documentation": "Retrieve a specific entity inside a group\n\nReturn: None"
+  },
+  {
+    "label": "ENT_GroupGetNbEntities",
+    "kind": "Function",
+    "insertText": "ENT_GroupGetNbEntities(${1:EntityID})",
+    "documentation": "This function returns the number of entitesinside a group.\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetDamage",
+    "kind": "Function",
+    "insertText": "ENT_SetDamage(${1:EntityID}, ${2:f32})",
+    "documentation": "Set the damage of the specified entity\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetGridPosition",
+    "kind": "Function",
+    "insertText": "ENT_SetGridPosition(${1:EntityID}, ${2:s32}, ${3:s32&})",
+    "documentation": "Set the (X,Y) position of the given entity in grid coordinates. Elevation is auto computed to make entity stick to ground. The function raise an assert in case of failure\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetOrientation",
+    "kind": "Function",
+    "insertText": "ENT_SetOrientation(${1:EntityID}, ${2:f32})",
+    "documentation": "Set the orientation (Z rotation) of the given entity. The function raise an assert in case of failure\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetPosition",
+    "kind": "Function",
+    "insertText": "ENT_SetPosition(${1:EntityID}, ${2:f32}, ${3:f32&})",
+    "documentation": "Set the (X,Y) position of the given entity in world coordinates. Elevation is auto computed to make entity stick to ground. The function raise an assert in case of failure\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetPropertyValueF32",
+    "kind": "Function",
+    "insertText": "ENT_SetPropertyValueF32(${1:EntityID}, ${2:mcString}, ${3:mcString}, ${4:mcString})",
+    "documentation": "Set the value of a specific property in an entity propertyset\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetPropertyValueS32",
+    "kind": "Function",
+    "insertText": "ENT_SetPropertyValueS32(${1:EntityID}, ${2:mcString}, ${3:mcString}, ${4:s32})",
+    "documentation": "Set the value of a specific property in an entity propertyset\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetPropertyValueString",
+    "kind": "Function",
+    "insertText": "ENT_SetPropertyValueString(${1:EntityID}, ${2:mcString}, ${3:mcString}, ${4:f32})",
+    "documentation": "Set the value of a specific property in an entity propertyset\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetReserve",
+    "kind": "Function",
+    "insertText": "ENT_SetReserve(${1:EntityID}, ${2:f32})",
+    "documentation": "Set the reserve of the specified entity\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetStamina",
+    "kind": "Function",
+    "insertText": "ENT_SetStamina(${1:EntityID}, ${2:f32})",
+    "documentation": "Set the stamina of the specified entity\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SetZ",
+    "kind": "Function",
+    "insertText": "ENT_SetZ(${1:EntityID}, ${2:f32})",
+    "documentation": "Set the elevation (Z position) of the given entity. The function raise an assert in case of failure\n\nReturn: None"
+  },
+  {
+    "label": "ENT_SwitchState",
+    "kind": "Function",
+    "insertText": "ENT_SwitchState(${1:EntityID})",
+    "documentation": "Switch the logical state of an entity\n\nReturn: None"
+  },
+  {
+    "label": "ANM_Play",
+    "kind": "Function",
+    "insertText": "ANM_Play(${1:EntityID}, ${2:mcString}, ${3:mcString})",
+    "documentation": "Play an animation\n\nReturn: None"
+  },
+  {
+    "label": "ANM_Stop",
+    "kind": "Function",
+    "insertText": "ANM_Stop(${1:EntityID})",
+    "documentation": "Stop an animation\n\nReturn: None"
+  },
+  {
+    "label": "LEV_RoofVisibility",
+    "kind": "Function",
+    "insertText": "LEV_RoofVisibility(${1:mcString}, ${2:s32})",
+    "documentation": "Permit to hide or show roofs\n\nReturn: None"
+  }
+]
